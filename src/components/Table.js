@@ -87,7 +87,8 @@ export default function Table2() {
       if (code === color_list[index].code) {
         return color_list[index].color;
       } else {
-        return "black";
+        continue
+        // return "black";
       }
     }
   };
