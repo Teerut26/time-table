@@ -11,6 +11,10 @@ export default function Header() {
 
   }, [])
 
+  useEffect(() => {
+   document.title = time.toLocaleString('th-TH')
+  }, [time])
+
   return (
     <div style={{"padding-left":10,paddingRight:10,paddingBottom:1}} className="ant-page-header site-page-header ant-page-header-ghost ant-page-header-compact">
       <div className="ant-page-header-heading">
