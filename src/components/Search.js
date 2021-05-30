@@ -67,9 +67,9 @@ export default function Search2(props) {
   //     console.log(allData);
   //   }, [allData]);
 
-//   useEffect(() => {
-//     console.log(searchResulteShow);
-//   }, [searchResulteShow]);
+  //   useEffect(() => {
+  //     console.log(searchResulteShow);
+  //   }, [searchResulteShow]);
 
   return (
     <div>
@@ -112,17 +112,40 @@ export default function Search2(props) {
                               {/* {item.list.map((item2) => ("| คาบที่ "+item2.index+" ห้อง "+item2.room+" ") )} */}
                               {item.list.map((item2) => (
                                 <div>
-                                  <Badge
+                                  <span className="ant-badge ant-badge-not-a-wrapper">
+                                    <sup
+                                      data-show="true"
+                                      className="ant-scroll-number ant-badge-count ant-badge-multiple-words"
+                                      style={{
+                                        backgroundColor: "rgb(82, 196, 26)",
+                                      }}
+                                    >
+                                      <div>
+                                        {"คาบที่ " +
+                                          item2.index +
+                                          " ห้อง " +
+                                          item2.room +
+                                          "  " +
+                                          item2.teacher +
+                                          "  " +
+                                          item2.code}
+                                      </div>
+                                    </sup>
+                                  </span>
+
+                                  {/* <Badge
                                     count={
                                       "คาบที่ " +
                                       item2.index +
                                       " ห้อง " +
-                                      item2.room+
+                                      item2.room +
                                       "  " +
-                                      item2.teacher
+                                      item2.teacher +
+                                      "  " +
+                                      item2.code
                                     }
                                     style={{ backgroundColor: "#52c41a" }}
-                                  />
+                                  /> */}
                                 </div>
                               ))}
                             </div>

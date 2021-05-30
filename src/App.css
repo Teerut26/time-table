@@ -1,3 +1,11 @@
 .ant-table-container{
   overflow-x: auto;
 }
+
+.bg-red{
+  background-color: tomato !important;
+}
+
+/* tr:hover{
+  background-color: none;
+} */

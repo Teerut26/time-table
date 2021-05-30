@@ -25,7 +25,7 @@ export default function Header() {
           <div className="ant-page-header-back">
           </div>
           <span className="ant-page-header-heading-title" title="Title">
-            {time.toLocaleTimeString()}
+            {time.toLocaleTimeString('th-TH')}
           </span>
         </div>
       </div>
