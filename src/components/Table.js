@@ -239,7 +239,11 @@ function Tb(props) {
   }, [])
 
   return (
-    <td style={{ color: check_color(props.obj.code) }} className={current ? "ant-table-cell bg-red" : "ant-table-cell"}>
+    <td 
+    style={{ color: check_color(props.obj.code) }} 
+    // className={current ? "ant-table-cell bg-red" : "ant-table-cell"}
+    className="ant-table-cell"
+    >
       {/* {props.Hour} */}
       <center>
         <b>
